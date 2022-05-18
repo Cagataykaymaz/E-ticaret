@@ -37,7 +37,9 @@ Widget buildNavIcon({
   required bool active,
 }) {
   return GestureDetector(
-    child: Icon(iconData,
-        size: 20, color: Color(active ? 0xFF0001FC : 0xFF0A1034)),
+    child: Container(
+      child: Icon(iconData,
+          size: 20, color: Color(active ? 0xFF0001FC : 0xFF0A1034)),
+    ),
   );
 }
